@@ -43,7 +43,6 @@ $(document).ready(function () {
   function newGame() {
 
     // Choosing the orb images and assigning their values
-    // Used method found at: https://stackoverflow.com/a/38571132/11215238
     // 1. Establish Array
     var orbs = ["Aegis", "Aether", "Blight", "Energy", "Heart", "Linkens", "Lotus", "Octarine", "Venom", "Points", "Refresher", "Shadow", "Soul", "Ultimate", "Vitality"];
     // 2. Shuffle the array

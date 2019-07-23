@@ -2,13 +2,19 @@
 [Deployed Repo](https://bigpoppachop.github.io/unit-4-game/)
 
 [Git Hub Repo](https://github.com/bigPoppaChop/unit-4-game)
+
+### Acknowledgements
+
+* Orb images are item icons from the video game Dota 2. [Link](https://dota2.gamepedia.com/Items)
+
+* The method I used to shuffle the array of orb names I found on [StackOverflow](https://stackoverflow.com/a/38571132/11215238)
+
+
 ### Overview
 
 In this assignment, you'll create another fun and interactive game for web browsers. This time, your app must dynamically update your HTML pages with the jQuery library.
 
 ### Option One: CrystalsCollector Game
-
-![Crystal Collector](Images/1-CrystalCollector.jpg)
 
 1. [Watch the demo](https://youtu.be/yNI0l2FMeCk).
 
@@ -40,3 +46,4 @@ In this assignment, you'll create another fun and interactive game for web brows
 * The random number shown at the start of the game should be between 19 - 120.
 
 * Each crystal should have a random hidden value between 1 - 12.
+
