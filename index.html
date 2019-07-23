@@ -11,7 +11,30 @@
 <title>Crystal Game</title>
 </head>
 <body>
-
+<div class = container>
+    <!-- Header with game information! -->
+    <div class="jumbotron">
+        <h1 class="display-4">Assemble The Orbs</h1>
+        <p class="lead">Combine the orbs so their power matches the required amount!</p>
+        <hr class="my-4">
+        <p>The orb's value and the required total is randomized each playthrough!</p>
+    </div>
+    <!-- Div for holding Wins & Losses -->
+    <div class="border border-dark rounded bg-info p-2 mb-4" id="records">
+        <h4 id="Wins">Wins: 0</h4>
+        <h4 id="Losses">Losses: 0</h4>
+    </div>
+        <!--Div for Required Power -->
+    <div class= "border border-dark rounded bg-success p-2 mb-4" id="goalDiv">
+        <h4 id="goalAmount">Required Power: 0</h4>
+    </div>
+    <div class="border border-dark rounded bg-secondary p-2 mb-4" id="gemsDiv">
+        <!-- Images of Gems will be printed here -->
+    </div>
+    <div class="border border-dark rounded p-2 mb-4" id="playerTotalDiv">
+        <h4 id="playerTotalText">Current Power: 0</h4>
+    </div>
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
