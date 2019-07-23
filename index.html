@@ -1,43 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="assets/css/reset.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<title>Crystal Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Crystal Game</title>
 </head>
+
 <body>
-<div class = container>
-    <!-- Header with game information! -->
-    <div class="jumbotron">
-        <h1 class="display-4">Assemble The Orbs</h1>
-        <p class="lead">Combine the orbs so their power matches the required amount!</p>
-        <hr class="my-4">
-        <p>The orb's value and the required total is randomized each playthrough!</p>
+    <div class=container>
+        <!-- Header with game information! -->
+        <div class="jumbotron">
+            <h1 class="display-4">Assemble The Orbs</h1>
+            <p class="lead">Combine the orbs so their power matches the required amount!</p>
+            <hr class="my-4">
+            <p>The available orbs, their values, and the required total is randomized each playthrough!</p>
+        </div>
+
+
+
+        <!-- Row for Game Information -->
+        <div class="row mb-4 p-1">
+            <!-- Div for holding Wins & Losses -->
+            <div class="col-4 infobox">
+                <div class="border border-dark rounded bg-info p-1" id="records">
+                    <h4 id="Wins">Win: 0</h4>
+                    <h4 id="Losses">Lose: 0</h4>
+                </div>
+            </div>
+            <!--Div for Required Power -->
+            <div class="col-4 infobox">
+                <div class="border border-dark rounded bg-success p-1" id="goalDiv">
+                    <h4 class="text-center">Required Power</h4>
+                    <h4 id="goalTotal" class="text-center">0</h4>
+                </div>
+            </div>
+            <div class="col-4 infobox">
+                <div class="border border-dark rounded p-1" id="playerTotalDiv">
+                    <h4 class="text-center">Current Power</h4>
+                    <h4 id="currentTotal" class="text-center">0</h4>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Row to store Gems -->
+        <div class="row border border-dark rounded bg-dark" id="gemsDiv">
+            <!-- Images of Gems will be printed here -->
+            <div class="col p-2 m-1 orbDiv text-center">
+                <img id="orb1IMG" src="" data-value="0" alt="">
+                <p class="orbLabel" id="orb1Label">Orb 1</p>
+            </div>
+            <div class="col p-2 m-1 orbDiv text-center">
+                <img id="orb2IMG" src="" data-value="0" alt="">
+                <p class="orbLabel" id="orb2Label">Orb 2</p>
+            </div>
+            <div class="col p-2 m-1 orbDiv text-center">
+                <img id="orb3IMG" src="" data-value="0" alt="">
+                <p class="orbLabel" id="orb3Label">Orb 3</p>
+            </div>
+            <div class="col p-2 m-1 orbDiv text-center">
+                <img id="orb4IMG" src="" data-value="0" alt="">
+                <p class="orbLabel" id="orb4Label">Orb 4</p>
+            </div>
+        </div>
+
     </div>
-    <!-- Div for holding Wins & Losses -->
-    <div class="border border-dark rounded bg-info p-2 mb-4" id="records">
-        <h4 id="Wins">Wins: 0</h4>
-        <h4 id="Losses">Losses: 0</h4>
-    </div>
-        <!--Div for Required Power -->
-    <div class= "border border-dark rounded bg-success p-2 mb-4" id="goalDiv">
-        <h4 id="goalAmount">Required Power: 0</h4>
-    </div>
-    <div class="border border-dark rounded bg-secondary p-2 mb-4" id="gemsDiv">
-        <!-- Images of Gems will be printed here -->
-    </div>
-    <div class="border border-dark rounded p-2 mb-4" id="playerTotalDiv">
-        <h4 id="playerTotalText">Current Power: 0</h4>
-    </div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="assets/javascript/game.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>

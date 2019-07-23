@@ -1,7 +1,25 @@
-body{
+body {
     background-image: url("../images/background_image.jpg");
 }
 
-#playerTotalDiv{
+#playerTotalDiv {
     background-color: tan;
+}
+
+#records, #goalDiv, #playerTotalDiv{
+    width: 200px;
+}
+.infobox div{
+    margin: auto;
+    display: block;
+}
+.orbDiv img {
+    margin: auto;
+    display: block;
+    border: 2px solid darkgoldenrod;
+}
+
+.orbLabel {
+    color: darkgoldenrod;
+    font-family: 'Rock Salt', cursive;
 }
